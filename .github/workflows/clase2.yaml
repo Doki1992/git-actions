@@ -1,0 +1,8 @@
+name: Clase 2 git hub actions
+on: push
+jobs:
+  first_jobs:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Hola mundo
+      run: echo "hola mundo"
