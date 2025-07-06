@@ -1,9 +1,10 @@
 name: Clase 3
 on: 
-  - push:
+  push:
     branches: ["main"]
 jobs:
   job-one:
+    runs-on: ubuntu-latest
     name: Try job 1
     steps:
       - name: step one
