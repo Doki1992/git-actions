@@ -4,8 +4,12 @@ jobs:
   first_jobs:
     runs-on: ubuntu-latest
     steps: 
-    - name: Hola mundo
-      run: echo "hola mundo"
+    - name: working dir
+      run: ls -la 
+    - name: checkout
+      uses: actions/checkout@v4
+    - name: working dir app
+      uses: ls -la
   second_job:
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: first_jobs
