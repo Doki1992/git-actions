@@ -1,0 +1,8 @@
+name: Clase 3
+on: 
+  - push:
+    branches: ["main"]
+jobs:
+  job-one:
+    name: Try job 1
+    run: echo "running job 1"
