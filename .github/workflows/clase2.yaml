@@ -6,6 +6,10 @@ jobs:
     steps: 
     - name: working dir
       run: ls -la 
+    - name: Actions
+      uses: actions/checkout@v4
+    - name: working dir 2
+      run: ls -la
   second_job:
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: first_jobs
