@@ -5,4 +5,6 @@ on:
 jobs:
   job-one:
     name: Try job 1
-    run: echo "running job 1"
+    steps:
+      - name: step one
+        run: echo "running step 1"
