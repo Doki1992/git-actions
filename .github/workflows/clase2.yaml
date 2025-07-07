@@ -3,6 +3,7 @@ on: push
 jobs:
   first_jobs:
     runs-on: ubuntu-latest
+    if: false
     steps: 
     - name: working dir
       run: ls -la 
