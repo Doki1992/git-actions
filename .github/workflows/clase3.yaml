@@ -6,6 +6,7 @@ jobs:
   job-one:
     runs-on: ubuntu-latest
     name: Try job 1
+    if: false
     services: 
       redis: 
         image:  redis
